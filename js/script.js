@@ -67,7 +67,29 @@ $(function () {
 
 // move to section without change URL
 
-$('a[href^="#"]').on("click", function (e) {
+$('a[href^="#services"]').on("click", function (e) {
+  e.preventDefault();
+
+  let target = $(this.hash);
+  $("html, body").stop().animate(
+    {
+      scrollTop: target.offset().top,
+    },
+    500
+  );
+});
+$('a[href^="#portfolio"]').on("click", function (e) {
+  e.preventDefault();
+
+  let target = $(this.hash);
+  $("html, body").stop().animate(
+    {
+      scrollTop: target.offset().top,
+    },
+    500
+  );
+});
+$('a[href^="#price"]').on("click", function (e) {
   e.preventDefault();
 
   let target = $(this.hash);

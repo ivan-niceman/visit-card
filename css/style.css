@@ -406,6 +406,12 @@ body::-webkit-scrollbar-track {
     width: 230px;
   }
 }
+.sample {
+  font-size: calc((100vw - 320px) / (1280 - 320) * (40 - 24) + 24px);
+  font-style: italic;
+  margin-top: 70px;
+  text-shadow: 0 10px 10px rgb(0 0 0);
+}
 .carousel {
   margin: 100px auto;
   width: 70%;
