@@ -3,7 +3,7 @@
   font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
-  font-size: calc((100vw - 320px) / (1280 - 320) * (70 - 50) + 50px);
+  font-size: calc((100vw - 320px) / (1280 - 320) * (50 - 30) + 30px);
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -592,8 +592,8 @@ textarea {
   color: #dee2e6 !important;
 }
 #top {
-  width: calc((100vw - 320px) / (1280 - 320) * (70 - 50) + 50px);
-  height: calc((100vw - 320px) / (1280 - 320) * (70 - 50) + 50px);
+  width: calc((100vw - 320px) / (1280 - 320) * (50 - 30) + 30px);
+  height: calc((100vw - 320px) / (1280 - 320) * (50 - 30) + 30px);
   background: rgba(8, 204, 194, 0.5);
   border-radius: 50%;
   position: fixed;
