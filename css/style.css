@@ -68,7 +68,8 @@ body::-webkit-scrollbar-track {
 }
 .logo {
   font-family: "Permanent Marker", cursive, "Times New Roman", Times, serif;
-  font-size: 28px !important;
+  font-size: 40px !important;
+  margin-right: 50px !important;
   animation: logo 1.5s ease-in-out infinite alternate;
 }
 @keyframes logo {
@@ -81,15 +82,32 @@ body::-webkit-scrollbar-track {
       0 0 15px #03e9f4, 0 0 20px #03e9f4, 0 0 25px #03e9f4, 0 0 30px #03e9f4;
   }
 }
+.nav-item {
+  position: relative;
+}
+.nav-item:not(:last-child) {
+  margin-right: 10px;
+}
+.nav-item:after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  border-bottom: 1px solid #03e9f4;
+  transform: scale(0);
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.nav-item:hover::after {
+  transform: scale(1);
+}
 .nav-link,
 .header-tel {
   font-size: calc((100vw - 320px) / (1280 - 320) * (24 - 20) + 20px);
 }
 .nav-link {
   transition: all 0.2s;
-}
-.nav-link:hover {
-  box-shadow: 0 10px 10px -10px #03e9f4;
 }
 .header-tel {
   display: inline-block;
@@ -112,10 +130,10 @@ body::-webkit-scrollbar-track {
   width: 100%;
   height: 2px;
   background: linear-gradient(90deg, transparent, #03e9f4);
-  animation: btn-anim1 2s linear infinite;
+  animation: btn-anim 2s linear infinite;
 }
 
-@keyframes btn-anim1 {
+@keyframes btn-anim {
   0% {
     left: -100%;
   }
